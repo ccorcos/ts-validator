@@ -7,7 +7,7 @@
     "build": "rm -rf lib && tsc",
     "watch": "rm -rf lib && tsc --watch",
     "test": "npm run build && ava lib/tests",
-    "release": "npm test && rm -rf lib/tests && npm version minor && npm publish"
+    "release": "npm test && rm -rf lib/tests && npm publish"
   },
   "keywords": [],
   "author": "",
