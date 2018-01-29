@@ -1,5 +1,5 @@
 {
-  "name": "ts-validator",
+  "name": "typescript-validator",
   "version": "1.0.0",
   "description": "Type-safe runtime validator for parsing unsafe data.",
   "main": "lib/index.js",
