@@ -4,13 +4,12 @@
 
 ================================================================================ */
 
+import { Purify } from "typelevel-ts"
 import * as isString from "lodash.isstring"
 import * as isPlainObject from "lodash.isplainobject"
 import * as isNumber from "lodash.isnumber"
 import * as isBoolean from "lodash.isboolean"
 import * as isArray from "lodash.isarray"
-
-export type Purify<T extends string> = { [P in T]: T }[T]
 
 export type Validator<T> = (value: T) => boolean
 

@@ -1,6 +1,6 @@
 {
   "name": "typescript-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Type-safe runtime validator for parsing unsafe data.",
   "main": "lib/index.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "typelevel-ts": "^0.2.3",
     "typescript": "^2.6.2"
   },
   "files": [
