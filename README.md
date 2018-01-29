@@ -11,7 +11,7 @@ When used correctly, Typescript will throw and error if your validator function 
 Install from npm:
 
 ```sh
-npm install --save ts-validator
+npm install --save typescript-validator
 ```
 
 Given a type interface:
@@ -28,7 +28,7 @@ interface User {
 You can create a runtime validator function like this:
 
 ```ts
-import * as validate from "ts-validate"
+import * as validate from "typescript-validator"
 
 const validator = validate.object<User>({
 	id: validate.number(),
