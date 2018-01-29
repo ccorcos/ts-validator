@@ -1,18 +1,33 @@
 {
-  "name": "typescript-boilerplate",
+  "name": "ts-validator",
   "version": "1.0.0",
-  "description": "boilerplate for web applications using typescript and webpack",
+  "description": "Type-safe runtime validator for parsing unsafe data.",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && tsc",
-    "watch": "rm -rf lib && tsc --watch"
+    "watch": "rm -rf lib && tsc --watch",
+    "test": "npm run build && ava lib/tests",
+    "release": "npm test && rm -rf lib/tests && npm version minor && npm publish"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "lodash.isarray": "^4.0.0",
+    "lodash.isboolean": "^3.0.3",
+    "lodash.isnumber": "^3.0.3",
+    "lodash.isplainobject": "^4.0.6",
+    "lodash.isstring": "^4.0.1"
+  },
   "devDependencies": {
-    "typescript": "^2.2.1"
+    "@types/lodash": "^4.14.97",
+    "@types/lodash.isarray": "^4.0.3",
+    "@types/lodash.isboolean": "^3.0.3",
+    "@types/lodash.isnumber": "^3.0.3",
+    "@types/lodash.isplainobject": "^4.0.3",
+    "@types/lodash.isstring": "^4.0.3",
+    "ava": "^0.25.0",
+    "typescript": "^2.6.2"
   },
   "files": [
     "lib/*"
